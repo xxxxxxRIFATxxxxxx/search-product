@@ -27,6 +27,11 @@ function searchProduct(products, searchText) {
         // if (product.name.toLowerCase().startsWith(searchText.toLowerCase())) {
         //     matchedProduct.push(product);
         // };
+
+        // // For Ends With Function
+        // if (product.name.toLowerCase().endsWith(searchText.toLowerCase())) {
+        //     matchedProduct.push(product);
+        // };
     };
 
     return matchedProduct;
