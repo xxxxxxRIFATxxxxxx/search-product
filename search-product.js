@@ -12,9 +12,21 @@ function searchProduct(products, searchText) {
     const matchedProduct = [];
 
     for (product of products) {
+        // // For Index Of Function
         if (product.name.toLowerCase().indexOf(searchText.toLowerCase()) !== -1) {
             matchedProduct.push(product);
         };
+
+        // // For Includes Function
+        // if (product.name.toLowerCase().includes(searchText.toLowerCase())) {
+        //     matchedProduct.push(product);
+        // };
+
+
+        // // For Starts With Function
+        // if (product.name.toLowerCase().startsWith(searchText.toLowerCase())) {
+        //     matchedProduct.push(product);
+        // };
     };
 
     return matchedProduct;
